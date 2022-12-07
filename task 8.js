@@ -1,8 +1,10 @@
-function format(seconds) {
-    let s = (seconds % 60).toString();
-    let m = Math.floor(seconds / 60 % 60).toString();
-    let h = Math.floor(seconds / 60 / 60 % 60).toString();
-    return `${h.padStart(2,'0')}:${m.padStart(2,'0')}:${s.padStart(2,'0')}`;
-  }
-  
-  console.log(format(3600));
+function a(){
+h = +prompt('часы');
+m = +prompt('минуты');
+s = +prompt('секунды');
+function seconds (a,b,c) {
+return (h * 3600) + (m * 60) + s
+}
+alert(seconds(h,m,s))
+}
+a()
